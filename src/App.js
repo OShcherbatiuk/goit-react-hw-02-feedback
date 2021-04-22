@@ -21,7 +21,7 @@ class App extends Component {
     return total ? Math.round((this.state.good / total) * 100) : 0;
   };
 
-  handleFeedback = (e) => {
+  handleFeedback = e => {
     const value = e.target.value;
     this.setState(prevState => {
       return { [value]: prevState[value] + 1 };
